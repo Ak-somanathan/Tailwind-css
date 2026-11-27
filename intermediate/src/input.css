@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto Condensed", sans-serif; 
+  --text-10xl: 6.75rem;
+  --color-pure-red: #FF0000;
+  --color-regal-blue: #243c5a;
+  --color-newcyan: #00BCD4;
+  --font-weight-cyanbold: 1000;
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+  --color-red-200: blue;
+}
+
+@custom-variant dark (&:where(.dark-theme, .dark-theme *));
+
+.my-btn{
+  @apply bg-newcyan px-3 m-4 rounded font-roboto border-2 border-white;
+}
